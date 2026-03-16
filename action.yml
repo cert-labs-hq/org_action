@@ -1,0 +1,13 @@
+name: 'JS Hello World'
+description: 'A simple JavaScript Action for the lab'
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: 'DevOps Engineer'
+outputs:
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'node20'
+  main: 'dist/index.js' # <--- IMPORTANT: Point to the compiled/bundled file
